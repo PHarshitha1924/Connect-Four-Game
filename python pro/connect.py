@@ -11,11 +11,11 @@ HEIGHT = (ROWS + 1) * SQUARESIZE
 SIZE = (WIDTH, HEIGHT)
 
 # 🎨 Light color theme
-BOARD_COLOR = (173, 216, 230)         # Light blue
-BACKGROUND = (245, 245, 245)          # Off-white
-PLAYER1_COLOR = (240, 128, 128)       # Light coral
-PLAYER2_COLOR = (250, 250, 210)       # Light goldenrod
-TEXT_COLOR = (60, 60, 60)             # Dark gray for text
+BOARD_COLOR = (173, 216, 230)         
+BACKGROUND = (245, 245, 245)          
+PLAYER1_COLOR = (240, 128, 128)       
+PLAYER2_COLOR = (250, 250, 210)       
+TEXT_COLOR = (60, 60, 60)      
 
 pygame.init()
 FONT = pygame.font.SysFont("monospace", 75)
@@ -101,7 +101,7 @@ while not game_over:
                     game_over = True
 
                 draw_board(board)
-                turn ^= 1  # Toggle turn
+                turn ^= 1  
 
     if game_over:
         pygame.time.wait(3000)
